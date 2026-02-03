@@ -20,5 +20,11 @@ namespace W26W5IntroToWpf
         {
             InitializeComponent();
         }
+
+        private void btnShow_Click(object sender, RoutedEventArgs e)
+        {
+            string name = txtFirstName.Text;
+            MessageBox.Show("Hello " + name);
+        }
     }
 }
