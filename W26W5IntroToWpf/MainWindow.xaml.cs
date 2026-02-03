@@ -24,7 +24,12 @@ namespace W26W5IntroToWpf
         private void btnShow_Click(object sender, RoutedEventArgs e)
         {
             string name = txtFirstName.Text;
-            MessageBox.Show("Hello " + name);
+            var result = MessageBox.Show("Hello " + name, "Message", MessageBoxButton.YesNo, MessageBoxImage.Information);
+
+            if (result == MessageBoxResult.Yes)
+                MessageBox.Show("YES clicked");
+            else
+                MessageBox.Show("NO clicked");
         }
     }
 }
