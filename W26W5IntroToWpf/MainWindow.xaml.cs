@@ -31,5 +31,15 @@ namespace W26W5IntroToWpf
             else
                 MessageBox.Show("NO clicked");
         }
+        
+        private void txtFirstName_GotFocus(object sender, RoutedEventArgs e)
+        {
+            txtFirstName.Background = Brushes.Cyan;
+        }
+
+        private void txtFirstName_LostFocus(object sender, RoutedEventArgs e)
+        {
+            txtFirstName.Background = Brushes.White;
+        }
     }
 }
