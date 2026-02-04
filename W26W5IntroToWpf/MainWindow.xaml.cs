@@ -41,5 +41,12 @@ namespace W26W5IntroToWpf
         {
             txtFirstName.Background = Brushes.White;
         }
+
+        private void btnShowGridExample_Click(object sender, RoutedEventArgs e)
+        {
+            GridExample win2 = new GridExample();
+            //win2.Owner = this;
+            win2.Show();
+        }
     }
 }
